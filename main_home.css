@@ -1,0 +1,157 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: black;
+}
+header{
+    background-color:rgba(216, 216, 216, 0.122); ;
+display: flex;
+font-family: monospace;
+height: 80px;
+justify-content: space-between;
+width: 100%;
+}
+header h1{
+    color: blue;
+    font-family: monospace;
+padding: 20px;
+}
+header span{
+    color: white;
+}
+#pages{
+    display: flex;
+    padding: 25px;
+}
+#pages ul{
+    display: flex;
+
+}
+#pages ul li{
+    list-style-type: none;
+    padding-left: 15px;
+
+    
+}
+#pages a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#pages a:hover{
+    opacity: 0.4;
+}
+#top_div{
+    padding-top: 10px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+}
+
+#card_wrap{
+    
+    margin-bottom: 10%;
+    width: 18%;
+    border-radius: 0px 0px 18px 18px;
+    background-color:rgba(26, 26, 26, 0.481);
+    box-shadow: 1px 2px rgba(216, 216, 216, 0.122);
+    
+
+}
+#card_wrap:hover{
+    opacity: 0.7;
+}
+#info{
+display: flex;
+flex-direction: column;
+text-align:center;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+color: white;
+}
+img{
+    width: 100%;
+    height: 300px;
+    border-radius: 0px 0px 15px 15px;
+}
+#recommended_div{
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#_top{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+padding-left: 10px;
+padding-top: 20px;
+}
+#_top a{
+    text-decoration: none;
+    padding: 10px;
+}
+#_top a:hover{
+    opacity: 0.4;
+}
+#recommend{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 100px;
+    color: white;
+
+}
+#recommend a{
+    text-decoration: none;
+    padding: 10px;
+
+}
+#recommend a:hover{
+    opacity: 0.4;
+}
+#new_div{
+    width: 100%;
+   padding-top: 20px;
+}
+#carousel_wrap{
+    width: 35%;
+    border-radius: 0px 0px 18px 18px;
+    background-color:rgba(26, 26, 26, 0.481);
+    box-shadow: 1px 2px rgba(216, 216, 216, 0.122);
+    margin: auto;
+    transition: 4s ease-in;
+
+}
+#carousel_wrap img{
+    height: 455px;
+    width: 100%;
+    /* border-radius: 0px 0px 15px 15px; */
+
+}
+#carousel_info{
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+#image{
+    height: 455px;
+    width: 100%;
+}
+#new a{
+    color:blue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+#new p{
+    text-align: center;
+
+}
+#new{
+    padding-top: 50px;
+}

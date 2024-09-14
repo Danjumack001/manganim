@@ -1,0 +1,77 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: black;
+}
+header{
+    background-color:rgba(216, 216, 216, 0.122); ;
+display: flex;
+font-family: monospace;
+height: 80px;
+justify-content: space-between;
+width: 100%;
+}
+header h1{
+    color: blue;
+    font-family: monospace;
+padding: 20px;
+}
+header span{
+    color: white;
+}
+#pages{
+    display: flex;
+    padding: 25px;
+}
+#pages ul{
+    display: flex;
+
+}
+#pages ul li{
+    list-style-type: none;
+    padding-left: 15px;
+
+    
+}
+#pages a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#pages a:hover{
+    opacity: 0.4;
+}
+#new_txt{
+    padding-top: 30px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ padding-left: 50px;
+}
+#new_div{
+padding-top: 20px;
+}
+#new_wrap{
+    background-color:rgba(26, 26, 26, 0.481);
+    box-shadow: 1px 2px rgba(216, 216, 216, 0.122);
+     width: 70%;
+
+     display: flex;
+     justify-content: space-between;
+     margin: auto;
+}#new_wrap:hover{
+opacity: 0.6;
+}
+#new_wrap img{
+width: 50%;
+}
+#img_wrap{
+    padding-left: 30px;
+}
+#info{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-right: 30px;
+    padding-top: 35px;
+}
