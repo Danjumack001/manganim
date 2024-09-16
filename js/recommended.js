@@ -26,7 +26,7 @@ window.addEventListener('load',()=>{
         //         name
         //     })
             if(chapters == null){
-                notAva = "Ongoing •"
+                notAva = "Ongoing"
                 return {
                     title,
                     
@@ -61,8 +61,8 @@ window.addEventListener('load',()=>{
                     chapters})=>
                 `
                     <div id="card_wrap">
-                    <img src=${image_url}>
-                    <div id="info">
+                    <img id="img1" src=${image_url}>
+                    <div id="info_txt1">
                     <p>${title}</p>
                     <p>${chapters}  </p>
                     <p>${status}</p>

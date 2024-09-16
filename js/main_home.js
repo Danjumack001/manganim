@@ -24,9 +24,9 @@ const Datatop=topData.map((popular,index)=>{
 
 const popularDiv=Datatop.map(({title,episodes,year,image_url,})=>
     `
-  <div id="card_wrap">
-                    <img src=${image_url}>
-                    <div id="info">
+  <div id="card_wrap1">
+                    <img id="img1" src=${image_url}>
+                    <div id="info_txt1">
                     <p>${title}</p>
                     </div>
                     
@@ -70,9 +70,9 @@ const Datarec=recData.map((recommend,index)=>{
 
 const recDiv=Datarec.map(({title,image_url,})=>
     `
-  <div id="card_wrap">
-                    <img src=${image_url}>
-                    <div id="info">
+  <div id="card_wrap2">
+                    <img id="img2" src=${image_url}>
+                    <div id="info_txt2">
                     <p>${title}</p>
                     </div>
                     
@@ -93,7 +93,7 @@ console.log(Datarec)
 
 
     async function Bottom() {
-        const link="https://api.jikan.moe/v4/schedules?page=5"
+        const link="https://api.jikan.moe/v4/schedules"
 
 try {
     const response=await fetch(link)
@@ -128,13 +128,12 @@ title_english,images:{webp:{large_image_url}}}=last
 const botDiv=Databot.map(({title_english,large_image_url})=>
     `
   <div id="carousel_wrap">
-                    <img src=${large_image_url}>
+                    <img id="img3" src=${large_image_url}>
                     <div id="carousel_info">
                     <p>${title_english}</p>
                     
 
                     </div>
-                    
         
                     
                     </div>
@@ -144,21 +143,21 @@ const botDiv=Databot.map(({title_english,large_image_url})=>
 
 
 document.querySelector("#new_div").innerHTML=botDiv
-console.log(Databot)
+// console.log(Databot)
 
 
-const display=document.querySelector("#images")
-const display2=botDiv
-let count=-1
+// const display=document.querySelector("#images")
+// const display2=botDiv
+// let count=-1
 
-function increment() {
-    if (count===display2.lenght-1) {
-        count=-1
-    }
-    count++
-    display.src=display2[count]
-}
-setInterval(increment,1000)
+// function increment() {
+//     if (count===display2.lenght-1) {
+//         count=-1
+//     }
+//     count++
+//     display.src=display2[count]
+// }
+// setInterval(increment,1000)
 
 } catch (error) {
     console.error(error.message)

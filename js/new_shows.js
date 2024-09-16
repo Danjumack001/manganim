@@ -28,11 +28,11 @@ window.addEventListener('load',()=>{
             `
             <div id="new_wrap">
             
-            <div id="img_wrap">
-            <img src=${image_url}>
-            </div>
+            
+            <img id="img1" src=${image_url}>
+            
 
-            <div id="info">
+            <div id="info_txt1">
             <p>${title_english}</p>
             <p>${episodes + " episodes"}</p>
             </div>
